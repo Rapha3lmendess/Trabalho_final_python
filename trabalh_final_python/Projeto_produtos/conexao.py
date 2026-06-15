@@ -1,10 +1,10 @@
 import mysql.connector
 
 def conectar():
-    conexao = mysql.connector.connect(
+
+    return mysql.connector.connect(
         host="localhost",
         user="root",
         password="senac",
-        database="biblioteca"
+        database="controle_estoque"
     )
-    return conexao
